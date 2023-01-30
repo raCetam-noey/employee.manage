@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "2.5"
+metadata:
+  name: emp.manage
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: MY401637_SAML_ASSERTION
+          url: https://my401637-api.s4hana.cloud.sap
+        app:
+          name: YY1_EMP
+          package: TEST_YY1_DEFAULT
+          transport: ""
