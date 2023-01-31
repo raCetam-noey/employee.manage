@@ -20,9 +20,18 @@
         "uri": "/sap/opu/odata4/sap/zui_empoyee_v4/srvd/sap/zexpose_employee/0001/",
         "type": "OData",
         "settings": {
-          "annotations": [],
+          "annotations": [
+            "annotation"
+          ],
           "localUri": "localService/metadata.xml",
           "odataVersion": "4.0"
+        }
+      },
+      "annotation" : {
+        "uri": "model/annotation.xml",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "model/annotation.xml"
         }
       }
     }
