@@ -13,63 +13,27 @@
 			<f:DynamicPageTitle>
 				<f:heading>
 					<Title text="{i18n>ListPageTitle}"/>
-					<smartvariants:SmartVariantManagement
-						id="idSmartVariant"
-						persistencyKey="SmartFilter_Variant"
-						showShare="true"
-						showExecuteOnSelection="true"
-					>
-					</smartvariants:SmartVariantManagement>
+			
 				</f:heading>
 			</f:DynamicPageTitle>
 		</f:title>
 		<f:header>
 			<f:DynamicPageHeader>
 				<f:content>
-					<smartfilterbar:SmartFilterBar
-						id="idSmartFilterBar"
-						useToolbar="false"
-						smartVariant="idSmartVariant"
-						entitySet="EMPLOYEE"
-						persistencyKey="SmartFilter_Explored"
-					/>
+					<GenericTile
+						header="Manage Emplyees"
+						press=".navToManageEmployees"
+					>
+						<tileContent>
+							
+						</tileContent>
+					</GenericTile>
+				
 				</f:content>
 			</f:DynamicPageHeader>
 		</f:header>
 		<f:content>
-			<smarttable:SmartTable
-				id="idSmartTable"
-				entitySet="EMPLOYEE"
-				smartFilterId="idSmartFilterBar"
-				header="{i18n>TableTitle}"
-				tableType="ResponsiveTable"
-				enableAutoBinding="true"
-				class="sapUiResponsiveContentPadding"
-				demandPopin="true"
-                
-			>
-				<smarttable:customToolbar>
-					<Toolbar>
-						<ToolbarSpacer/>
-                        <Button
-                            icon='{i18n>CreateButtonIcon}'
-                            text="{i18n>CreateButton}"
-                            press="navCreate"
-                            type="Transparent"/>
-
-					</Toolbar>
-				</smarttable:customToolbar>
-                <smarttable:items>
-                    <Table growing="true"
-                    growingScrollToLoad="true"
-                    fixedLayout="false"
-                    itemPress="navDetail"
-                    mode="SingleSelectMaster">
-                    <ColumnListItem type="Navigation"/>
-                </Table>
-
-                </smarttable:items>
-			</smarttable:SmartTable>
+			
 		</f:content>
 	</f:DynamicPage>
 </mvc:View>

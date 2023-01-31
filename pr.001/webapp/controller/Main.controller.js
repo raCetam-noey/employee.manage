@@ -11,6 +11,10 @@ sap.ui.define([
             onInit: function () {
                 
 
-            }
+            },
+
+            navToManageEmployees: function () {
+                this.getOwnerComponent().getRouter().navTo("ListPage");
+            },
         });
     });
