@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="pr.001.controller.ListPage.controller"
+	controllerName="pr.001.controller.ListPage"
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true"
 	xmlns="sap.m"
