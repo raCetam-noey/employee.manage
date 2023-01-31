@@ -15,7 +15,7 @@ builder:
       configuration:
         target:
           destination: MY401654_SAML_ASSERTION
-          url: https://my401654-api.s4hana.cloud.sap
+          url: https://my401654.s4hana.cloud.sap
         app:
           name: ZPR_001
           description: 연습용 프로그램

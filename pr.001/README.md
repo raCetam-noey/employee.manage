@@ -7,7 +7,7 @@
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Template Used**<br>simple|
 |**Service Type**<br>SAP System (ABAP On Premise)|
-|**Service URL**<br>https://my401654-api.s4hana.cloud.sap/sap/opu/odata/sap/ZUI_EMPLOYEE_V2
+|**Service URL**<br>https://my401654.s4hana.cloud.sap/sap/opu/odata/sap/ZUI_EMPLOYEE_V2
 |**Module Name**<br>pr.001|
 |**Application Title**<br>Custom|
 |**Namespace**<br>|

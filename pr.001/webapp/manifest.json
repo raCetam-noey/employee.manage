@@ -20,9 +20,18 @@
                 "uri": "/sap/opu/odata/sap/ZUI_EMPLOYEE_V2/",
                 "type": "OData",
                 "settings": {
-                    "annotations": [],
+                    "annotations": [
+                        "annotation"
+                    ],
                     "localUri": "localService/metadata.xml",
                     "odataVersion": "2.0"
+                }
+            },
+            "annotation" : {
+                "uri": "model/annotation.xml",
+                "type": "ODataAnnotation",
+                "settings": {
+                  "localUri": "model/annotation.xml"
                 }
             }
         },
@@ -85,10 +94,17 @@
                 }
             },
             "": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
                 "dataSource": "mainService",
                 "preload": true,
-                "settings": {}
-            }
+                "settings": {
+                  
+                  "defaultCountMode": "Request",
+                  "defaultBindingMode": "TwoWay",
+                  "defaultOperationMode": "Server",
+                  "refreshAfterChange": true
+                }
+              }
         },
         "resources": {
             "css": [

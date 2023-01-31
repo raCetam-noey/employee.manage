@@ -9,6 +9,7 @@ sap.ui.define([
 
         return Controller.extend("pr.001.controller.Main", {
             onInit: function () {
+                
 
             }
         });

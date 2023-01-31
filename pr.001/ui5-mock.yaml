@@ -17,7 +17,7 @@ server:
           url: https://ui5.sap.com
         backend:
           - path: /sap
-            url: https://my401654-api.s4hana.cloud.sap
+            url: https://my401654.s4hana.cloud.sap
             destination: MY401654_SAML_ASSERTION
     - name: fiori-tools-appreload
       afterMiddleware: compression
