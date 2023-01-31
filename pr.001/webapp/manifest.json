@@ -137,6 +137,13 @@
                     "target": [
                         "ListPage"
                     ]
+                },
+                {
+                    "name" : "ObjectPage",
+                    "pattern" : "/ObjectPage/{id}",
+                    "target" : [
+                      "ObjectPage"
+                    ]
                 }
             ],
             "targets": {
@@ -153,6 +160,13 @@
                     "clearControlAggregation": false,
                     "viewId": "ListPage",
                     "viewName": "ListPage"
+                },
+                "ObjectPage": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "ObjectPage",
+                    "viewName": "ObjectPage"
                 }
             }
         },
