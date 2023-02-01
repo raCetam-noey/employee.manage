@@ -115,6 +115,9 @@
         },
         "routing": {
             "config": {
+                "targetAggregation": "beginColumnPages",
+                "targetControl": "idAppControl",
+                "clearTarget": false,
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "async": true,
@@ -132,6 +135,7 @@
                     ]
                 },
                 {
+
                     "name": "ListPage",
                     "pattern": "/ListPage",
                     "target": [
@@ -139,11 +143,14 @@
                     ]
                 },
                 {
+                    
                     "name" : "ObjectPage",
                     "pattern" : "/ObjectPage/{id}",
                     "target" : [
-                      "ObjectPage"
+                      "ObjectPage",
+                        "ListPage"
                     ]
+
                 }
             ],
             "targets": {
@@ -155,18 +162,26 @@
                     "viewName": "Main"
                 },
                 "ListPage": {
+                    
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
                     "viewId": "ListPage",
-                    "viewName": "ListPage"
+                    "viewName": "ListPage",
+                    "controlAggregation": "beginColumnPages",
+                    "controlId": "app"
+                
+
                 },
                 "ObjectPage": {
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
                     "viewId": "ObjectPage",
-                    "viewName": "ObjectPage"
+                    "viewName": "ObjectPage",
+                    "controlAggregation": "midColumnPages",
+                    "controlId": "app"
+
                 }
             }
         },
