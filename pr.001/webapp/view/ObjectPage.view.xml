@@ -18,7 +18,7 @@
 		<uxap:headerTitle>
 			<uxap:ObjectPageHeader
                 id="idObjectPageHeader"
-				objectTitle="오더 번호 : {Empno}"
+				objectTitle="사원 번호 : {Empno}"
 				isObjectTitleAlwaysVisible="false"
 				isObjectSubtitleAlwaysVisible="false"
 			>
@@ -31,7 +31,7 @@
 			<uxap:ObjectPageSection
             id="idObjectPageSection"
 				titleUppercase="false"
-                title="{i18n>ProductionInfoInputTitle}"
+                title="사원 정보"
 			>
 				<uxap:subSections>
 					<uxap:ObjectPageSubSection title="" id="idObjectPageSubSection">
